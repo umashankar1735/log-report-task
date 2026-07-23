@@ -1,0 +1,23 @@
+Skipping image OS validation for hb__fd0b65905071ec2d73295157fe410f29: docker inspect returned 1
+Collecting main service artifacts
+Failed to download artifact '/app/report.json' from service 'main' (best-effort)
+Traceback (most recent call last):
+  File "/Users/umashankar/.local/share/uv/tools/harbor/lib/python3.13/site-packages/harbor/trial/artifact_handler.py", line 330, in _download_artifact
+    await source_env.service_download_file(
+    ...<3 lines>...
+    )
+  File "/Users/umashankar/.local/share/uv/tools/harbor/lib/python3.13/site-packages/harbor/environments/docker/docker.py", line 1052, in service_download_file
+    await self.download_file(source_path, target_path)
+  File "/Users/umashankar/.local/share/uv/tools/harbor/lib/python3.13/site-packages/harbor/environments/docker/docker.py", line 1037, in download_file
+    await self._platform.download_file(source_path, target_path)
+  File "/Users/umashankar/.local/share/uv/tools/harbor/lib/python3.13/site-packages/harbor/environments/docker/docker_unix.py", line 185, in download_file
+    await self._env._run_docker_compose_command(
+    ...<2 lines>...
+    )
+  File "/Users/umashankar/.local/share/uv/tools/harbor/lib/python3.13/site-packages/harbor/environments/docker/docker.py", line 656, in _run_docker_compose_command
+    raise RuntimeError(
+    ...<5 lines>...
+    )
+RuntimeError: Docker compose command failed for environment log-report. Command: docker compose --project-name log-report__tbfhkwf__env --project-directory /Users/umashankar/Downloads/log-report/environment -f /private/var/folders/w3/qs93q04j5znd0slr3p5v2gvw0000gn/T/tmpfz3pk87i/log-report__TbfHKwf__env-docker-compose-resources.json -f /Users/umashankar/.local/share/uv/tools/harbor/lib/python3.13/site-packages/harbor/environments/docker/docker-compose-build.yaml -f /private/var/folders/w3/qs93q04j5znd0slr3p5v2gvw0000gn/T/tmp73wut75r/docker-compose-environment.json -f /private/var/folders/w3/qs93q04j5znd0slr3p5v2gvw0000gn/T/tmpl8kgcdsz/docker-compose-mounts.json cp main:/app/report.json jobs/2026-07-23__21-53-11/log-report__TbfHKwf/artifacts/app/report.json. Return code: 1. Stdout:  log-report__tbfhkwf__env-main-1 Copying log-report__tbfhkwf__env-main-1:/app/report.json to jobs/2026-07-23__21-53-11/log-report__TbfHKwf/artifacts/app/report.json
+Error response from daemon: Could not find the file /app/report.json in container 24ba6f3bc9364fef00243b647b6e79a256f273714582b3415856595a75c3e600
+. Stderr: None. 

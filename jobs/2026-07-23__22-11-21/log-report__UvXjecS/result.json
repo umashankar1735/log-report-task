@@ -1,0 +1,110 @@
+{
+    "id": "3f997ace-e6ef-43a5-841a-2e90c28bffc5",
+    "task_name": "dynamo/log-report",
+    "trial_name": "log-report__UvXjecS",
+    "trial_uri": "file:///Users/umashankar/Downloads/log-report/jobs/2026-07-23__22-11-21/log-report__UvXjecS",
+    "task_id": {
+        "path": "."
+    },
+    "source": null,
+    "task_checksum": "53bba5ab4a324ec61b5bbc73ae07189f689ebeb7ad6b044b925d6082b31433b5",
+    "config": {
+        "task": {
+            "path": ".",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": null
+        },
+        "trial_name": "log-report__UvXjecS",
+        "trials_dir": "jobs/2026-07-23__22-11-21",
+        "install_only": false,
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": "nop",
+            "import_path": null,
+            "model_name": null,
+            "n_concurrent": null,
+            "concurrency_group": null,
+            "skills": [],
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "resume_trajectory": false,
+            "load_trajectory": null,
+            "extra_allowed_hosts": [],
+            "kwargs": {},
+            "mcp_servers": []
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "cpu_enforcement_policy": "auto",
+            "memory_enforcement_policy": "auto",
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "override_tpu": null,
+            "mounts": null,
+            "extra_docker_compose": [],
+            "kwargs": {},
+            "extra_allowed_hosts": []
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "artifacts": [],
+        "extra_instruction_paths": [],
+        "job_id": "7b8839df-1280-4867-a4b1-52dbf970b43c"
+    },
+    "agent_info": {
+        "name": "nop",
+        "version": "1.0.0",
+        "model_info": null
+    },
+    "agent_result": {
+        "n_input_tokens": null,
+        "n_cache_tokens": null,
+        "n_output_tokens": null,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-07-23T16:41:21.379487Z",
+    "finished_at": "2026-07-23T16:41:34.207558Z",
+    "environment_setup": {
+        "started_at": "2026-07-23T16:41:21.408818Z",
+        "finished_at": "2026-07-23T16:41:22.820457Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-07-23T16:41:22.820532Z",
+        "finished_at": "2026-07-23T16:41:22.820606Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-07-23T16:41:22.820697Z",
+        "finished_at": "2026-07-23T16:41:22.820765Z"
+    },
+    "verifier": {
+        "started_at": "2026-07-23T16:41:23.282036Z",
+        "finished_at": "2026-07-23T16:41:23.610624Z"
+    },
+    "step_results": null
+}
